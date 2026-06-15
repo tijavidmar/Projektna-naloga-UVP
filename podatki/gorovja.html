@@ -498,12 +498,12 @@ function prijavaG() {
 <tr style="background-color:#4EC29E;"><td colspan="3"><div class="anketanaslov">Anketa</div></td></tr>
 
 
-<tr><td colspan="3"><div class="anketabesedilo2">Ali se s Porezna (1630 m), vidi Triglav (2864 m)?</div></td></tr>
+<tr><td colspan="3"><div class="anketabesedilo2">Ali ste letos že bili na Golici (1835 m)?</div></td></tr>
     
 <script type="text/javascript">
     function anketaGlasuj() {
         var av=0;
-        var stOdg=3;
+        var stOdg=2;
         for(i=1; i<=stOdg; i++)
         {
             if(document.getElementById('anketa'+i).checked)
@@ -542,7 +542,7 @@ function prijavaG() {
                 
             }
         }
-        xmlHttpAnketa.open("GET", "/anketa.asp?id=1047&av="+av, false);
+        xmlHttpAnketa.open("GET", "/anketa.asp?id=1048&av="+av, false);
         xmlHttpAnketa.setRequestHeader("Cache-Control", "no-cache");
         xmlHttpAnketa.setRequestHeader("Pragma", "no-cache");
         xmlHttpAnketa.setRequestHeader("If-Modified-Since", "Sat, 1 Jan 2000 00:00:00 GMT");
@@ -553,8 +553,6 @@ function prijavaG() {
 <tr><td><input value="odgovor1" type="radio" style="height:15px; margin:0px 0px 0px 2px; padding:0px;" id="anketa1" name="anketa" /></td><td style="width:100%; font-size:10px; color:#f5f5f5;"><label for="anketa1">Da</label></td></tr>
 
 <tr><td><input value="odgovor2" type="radio" style="height:15px; margin:0px 0px 0px 2px; padding:0px;" id="anketa2" name="anketa" /></td><td style="width:100%; font-size:10px; color:#f5f5f5;"><label for="anketa2">Ne</label></td></tr>
-
-<tr><td><input value="odgovor3" type="radio" style="height:15px; margin:0px 0px 0px 2px; padding:0px;" id="anketa3" name="anketa" /></td><td style="width:100%; font-size:10px; color:#f5f5f5;"><label for="anketa3">Ne vem</label></td></tr>
 
 <tr><td colspan="2"><div class="gumb3" onclick="anketaGlasuj();">Glasuj</div></td></tr>
 
