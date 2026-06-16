@@ -26,5 +26,3 @@ funkcije.shrani_v_csv(podatki_gor, "gore.csv", [
 funkcije.shrani_v_csv(vse_poti, "poti.csv", [
     "gora_id", "ime", "cas", "zahtevnost"
     ])
-
-print("Konec")
