@@ -174,6 +174,7 @@ def zberi_podrobnosti_vseh_gor(seznam_gor):
 
 
 def shrani_v_csv(podatki, datoteka, polja):
+    """Podatke zapiše v CSV datoteko z izbranimi stolpci."""
     with open(datoteka, "w", newline="", encoding="utf-8") as f:
         pisec = csv.DictWriter(f, fieldnames=polja, extrasaction="ignore")
         pisec.writeheader()

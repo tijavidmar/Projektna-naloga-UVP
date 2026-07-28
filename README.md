@@ -3,7 +3,7 @@ Projektna naloga pri predmetu Uvod v programiranje.
 
 ## Opis projektne naloge
 
-Cilj naloge je zajeti in analizirati podatke o slovenskih gorah in planinskih poteh s spletne strani [hribi.net](https://www.hribi.net).
+Cilj naloge je zajeti in analizirati podatke o slovenskih gorah in planinskih poteh s spletne strani [hribi.net](https://www.hribi.net/gorovja).
 
 Program samodejno prenese podatke o gorovjih, gorah in planinskih poteh, jih obdela ter shrani v CSV datoteke. Nato so podatki analizirani v Jupyter Notebooku, kjer so predstavljeni z grafi in statističnimi primerjavami.
 
@@ -21,6 +21,8 @@ Za posamezno pot zberemo:
 - ime poti,
 - čas hoje v minutah,
 - zahtevnost.
+
+> Opomba: Pri nekaterih gorah se napisano število poti ne ujema s številom naštetih poti na spletni strani, zato sem za poti posamezne gore upoštevala samo naštete poti.
 
 ## Zgradba in delovanje naloge
 

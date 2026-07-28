@@ -4,7 +4,6 @@ import os
 url_glavne_strani = "https://www.hribi.net/gorovja"
 mapa_za_shranjevanje = "podatki"
 
-
 os.makedirs(mapa_za_shranjevanje, exist_ok=True)
 
 html = funkcije.zajem_html(url_glavne_strani)
